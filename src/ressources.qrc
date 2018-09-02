@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/img">
+        <file alias="icon">icon.ico</file>
+        <file>refresh.jpg</file>
+        <file alias="fond">fond.png</file>
+        <file>add.jpg</file>
+        <file>de1.jpg</file>
+    </qresource>
+</RCC>
