@@ -53,6 +53,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 * D. Frolova and D. Simakov. Matching with invariant features. page 35, mars 2004.
 * L. Juan and O. Gwun. A comparison of sift, pca-sift and surf. International Journal of Image Processing
-(IJIP), pages 143{152, 2009.
+(IJIP), pages 143-152, 2009.
 * P. Borne, M. Benrejeb, and J. Haggege. Les réseaux de neurones : Présentation et applications. Editions
 TECHNIP, 2007.
