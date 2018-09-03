@@ -56,3 +56,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 (IJIP), pages 143-152, 2009.
 * P. Borne, M. Benrejeb, and J. Haggege. Les réseaux de neurones : Présentation et applications. Editions
 TECHNIP, 2007.
+* B. Tomasik, P. Thiha, and D. Turnbull. Tagging products using image classification.
