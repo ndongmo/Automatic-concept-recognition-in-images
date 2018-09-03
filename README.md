@@ -7,7 +7,7 @@ This project aims to implement a strong C++ algorithm for concept recognition in
 
 ## Building of the bac of visual words and image signatures extraction
 
-### Training image dataset and features extraction
+### Image dataset and features extraction
 
 First of all, we need to choose a right training dataset for features extraction. Here are some features we have to take into account when choosing a training images dataset :
 - the size of the dataset
@@ -17,9 +17,9 @@ First of all, we need to choose a right training dataset for features extraction
 Once the training dataset has been selected, we can start features extraction. A good feature should be invariant to geometry (rotation, scalling, affine transformation) and to photometry. There are many methods of extraction implemented by OpenCv, we choose the SIFT method because it has a better performance for some features.
 
 <table width="100">
-  <th>
-    <td>Method</td> <td>Time</td> <td>Scale</td> <td>Rotation</td> <td>Blur</td> <td>Illumination</td> <td>Affine</td> 
-  </th>
+  <tr>
+    <th>Method</th> <th>Time</th> <th>Scale</th> <th>Rotation</th> <th>Blur</th> <th>Illumination</th> <th>Affine</th> 
+  </tr>
   <tr>
     <td>SIFT</td> <td>Normal</td> <td>Best</td> <td>Best</td> <td>Best</td> <td>Normal</td> <td>Good</td>
   </tr>
@@ -30,3 +30,9 @@ Once the training dataset has been selected, we can start features extraction. A
     <td>SURF</td> <td>Best</td> <td>Good</td> <td>Normal</td> <td>Good</td> <td>Best</td> <td>Good</td>
   </tr>
 </table>
+
+### Bac of visual words
+This is done by clustering the extracted features with __kMeans algorithm__ provided by OpenCv.
+
+### Image signatures
+Once we built the bac of visual words, for each image we can now extract its signature. This signature is a vector V where |V| = the size of the clusters set and V[i] is the number of descriptors contained in the ith cluster.
