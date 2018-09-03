@@ -37,4 +37,6 @@ This is done by clustering the extracted features with __kMeans algorithm__ prov
 ### Image signatures
 Once we built the bac of visual words, for each image we can now extract its signature. This signature is a vector V where |V| = the size of the clusters set and V[i] is the number of descriptors contained in the ith cluster.
 
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" />
 
+## Neural Networks
