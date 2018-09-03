@@ -40,3 +40,19 @@ Once we built the bac of visual words, for each image we can now extract its sig
 <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" />
 
 ## Neural Networks
+
+## Authors
+
+* F. Ndongmo Silatsa
+
+## Licence
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/LICENSE.md) file for details
+
+## Acknowledgments
+
+* D. Frolova and D. Simakov. Matching with invariant features. page 35, mars 2004.
+* L. Juan and O. Gwun. A comparison of sift, pca-sift and surf. International Journal of Image Processing
+(IJIP), pages 143{152, 2009.
+* P. Borne, M. Benrejeb, and J. Haggege. Les reseaux de neurones : Presentation et applications. Editions
+TECHNIP, 2007.
