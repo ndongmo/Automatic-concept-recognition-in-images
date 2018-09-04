@@ -37,7 +37,7 @@ This is done by clustering the extracted features with __kMeans algorithm__ prov
 ### Image signatures
 Once we built the bac of visual words, for each image we can now extract its signature. This signature is a vector V where |V| = the size of the clusters set and V[i] is the number of descriptors contained in the ith cluster.
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" width="50%" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" width="60%" />
 
 ## Classification
 
@@ -52,7 +52,7 @@ Our algorithm is implemented through 3 majors classes :
 - __Classifier__ : classify concept by the mean of Artificial Neural Networks
 - __Processing__ : process images and return a set of concept (shape)
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.PNG" width="50%" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.PNG" width="70%" />
 
 ## Evaluation and testing
 
@@ -63,10 +63,10 @@ In order to evaluate our algorithm, we use Columbia Object Image Library (COIL) 
 - False Positive Rate (TPR) : 0.4%
 - Recall : 69%
 - Precision : 61%
-- Accuracy :99%
+- Accuracy : 99%
 - F-mesure : 65%
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/coil_100.png" width="50%" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/coil_100.png" width="30%" />
 
 ## Testing
 Our software present 3 different menus :
@@ -133,3 +133,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 * P. Borne, M. Benrejeb, and J. Haggege. Les réseaux de neurones : Présentation et applications. Editions
 TECHNIP, 2007.
 * B. Tomasik, P. Thiha, and D. Turnbull. Tagging products using image classification.
+* S. A. Nene, S. K. Nayar, and H. Murase. Columbia object image library (coil-100). Technical Report No.
+CUCS-006-96.
