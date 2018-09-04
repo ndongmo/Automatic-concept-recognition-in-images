@@ -1,6 +1,6 @@
 # Automatic concept recognition in images
 
-This project aims to implement a strong C++ algorithm for concept recognition in images based on Neural Networks. Moreover, it implements a friendly user interface for testing using Qt library. We also use the well-known OpenCv library for images processing and classification. Our method is a two phases approach. First, we detect and localize a concept (shape) in an image. Then, we recognize and classify the concept with our Neral Networks. However, before starting detection and classification, we need to do some work :
+This project aims to implement a strong C++ algorithm for concept recognition in images based on Neural Networks. Moreover, it implements a friendly user interface for evaluation and testing using Qt library. We also use the well-known OpenCv library for images processing and classification. Our method is a two phases approach. First, we detect and localize a concept (shape) in an image. Then, we recognize and classify the concept with our Neral Networks. However, before starting detection and classification, we need to do some work :
 
 - create a bac of visual words and extract image signatures from the training dataset of images
 - train the Neural Networks with the training dataset
@@ -41,7 +41,78 @@ Once we built the bac of visual words, for each image we can now extract its sig
 
 ## Classification
 
-The classification aims to associate automatically keywords to images or concepts in our context. In order to achieve this goal, we are going to use Artificial Neural Networks. But before using them for classification, we must train them with the training dataset. We use a supervised learning method which consists of a mapping between an input and an ouput. So, we map a concept signature to a class name or label. Also, our learning method is based on multilayer perceptron using a backpropagation algorithm to calculate the gradient. Once this step is done, we can present a concept to our Artificial Neural Network and it will return us its class name.
+The classification aims to associate automatically keywords to images or concepts in our context. In order to achieve this goal, we are going to use Artificial Neural Networks. But before using them for classification, we must train them with the training dataset. We use a supervised learning method which consists of a mapping between an input and an ouput. So, we map a concept signature to a class name or label. Also, our learning method is based on multilayer perceptron using a __backpropagation algorithm__ to calculate the gradient. Once this step is done, we can present a concept to our Artificial Neural Network and it will return us its class name.
+
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/perceptron.png" />
+
+## Implementation
+
+Our algorithm is implemented through 3 majors classes :
+- __BagOfWords__ : create and load image signatures
+- __Classifier__ : classify concept by the mean of Artificial Neural Networks
+- __Processing__ : process images and return a set of concept (shape)
+
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.png" />
+
+## Evaluation and testing
+
+## Evaluation
+In order to evaluate our algorithm, we use Columbia Object Image Library (COIL) which is a dataset available in several different versions : COIL-100, COIL-20. We use __cross validation__ as our evaluation method where we use the half dataset for training and the other for evaluation and testing. Here are the result we got according to data classification indices for COIL-100 dataset :
+
+- True Positive Rate (TPR) : 69%
+- False Positive Rate (TPR) : 0.4%
+- Recall : 69%
+- Precision : 61%
+- Accuracy :99%
+- F-mesure : 65%
+
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/coil_100.png" />
+
+## Testing
+Our software present 3 different menus :
+
+ - Bag of visual words : here we can create a new dictionary (image signatures) with precise configurations and load a saved dictionary.
+ - Neural Networks : here we can configure, train or load a trained Neural Networks.
+ - Tests and applications : here we can evaluate our classification, find different concepts in a given set of images (directory) and for every found concept, we can use it for searching in a given directory.
+ 
+ <table style="width:100%">
+  <tr>
+    <td>
+      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app1.PNG" />
+    </td>
+    <td>
+      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app2.PNG" />
+    </td>
+    <td>
+     <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app3.PNG" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app4.PNG" />
+    </td>
+    <td>
+      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app5.PNG" />
+    </td>
+    <td>
+     <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app6.PNG" />
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app7.PNG" />
+    </td>
+    <td>
+      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app8.PNG" />
+    </td>
+    <td>
+     <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app9.PNG" />
+    </td>
+    <td>
+     <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app10.PNG" />
+    </td>
+  </tr>
+ </table>
 
 ## Authors
 
