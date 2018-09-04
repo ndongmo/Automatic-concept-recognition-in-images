@@ -39,7 +39,9 @@ Once we built the bac of visual words, for each image we can now extract its sig
 
 <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" />
 
-## Neural Networks
+## Classification
+
+The classification aims to associate automatically keywords to images or concepts in our context. In order to achieve this goal, we are going to use Artificial Neural Networks. But before using them for classification, we must train them with the training dataset. We use a supervised learning method which consists of a mapping between an input and an ouput. So, we map a concept signature to a class name or label. Also, our learning method is based on multilayer perceptron using a backpropagation algorithm to calculate the gradient. Once this step is done, we can present a concept to our Artificial Neural Network and it will return us its class name.
 
 ## Authors
 
