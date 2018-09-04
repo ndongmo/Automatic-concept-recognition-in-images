@@ -43,7 +43,7 @@ Once we built the bac of visual words, for each image we can now extract its sig
 
 The classification aims to associate automatically keywords to images or concepts in our context. In order to achieve this goal, we are going to use Artificial Neural Networks. But before using them for classification, we must train them with the training dataset. We use a supervised learning method which consists of a mapping between an input and an ouput. So, we map a concept signature to a class name or label. Also, our learning method is based on multilayer perceptron using a __backpropagation algorithm__ to calculate the gradient. Once this step is done, we can present a concept to our Artificial Neural Network and it will return us its class name.
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/perceptron.png" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/perceptron.png" width="70%" />
 
 ## Implementation
 
@@ -52,7 +52,7 @@ Our algorithm is implemented through 3 majors classes :
 - __Classifier__ : classify concept by the mean of Artificial Neural Networks
 - __Processing__ : process images and return a set of concept (shape)
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.png" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.PNG" />
 
 ## Evaluation and testing
 
