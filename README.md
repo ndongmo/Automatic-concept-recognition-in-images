@@ -37,13 +37,13 @@ This is done by clustering the extracted features with __kMeans algorithm__ prov
 ### Image signatures
 Once we built the bac of visual words, for each image we can now extract its signature. This signature is a vector V where |V| = the size of the clusters set and V[i] is the number of descriptors contained in the ith cluster.
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" style="width:60%" />
 
 ## Classification
 
 The classification aims to associate automatically keywords to images or concepts in our context. In order to achieve this goal, we are going to use Artificial Neural Networks. But before using them for classification, we must train them with the training dataset. We use a supervised learning method which consists of a mapping between an input and an ouput. So, we map a concept signature to a class name or label. Also, our learning method is based on multilayer perceptron using a __backpropagation algorithm__ to calculate the gradient. Once this step is done, we can present a concept to our Artificial Neural Network and it will return us its class name.
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/perceptron.png" width="70%" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/perceptron.png" width="50%" />
 
 ## Implementation
 
@@ -98,6 +98,9 @@ Our software present 3 different menus :
      <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app6.PNG" />
     </td>
   </tr>
+ </table>
+ 
+ <table style="width:100%">
   <tr>
     <td>
       <img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/app7.PNG" />
