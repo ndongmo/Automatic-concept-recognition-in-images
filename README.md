@@ -37,7 +37,7 @@ This is done by clustering the extracted features with __kMeans algorithm__ prov
 ### Image signatures
 Once we built the bac of visual words, for each image we can now extract its signature. This signature is a vector V where |V| = the size of the clusters set and V[i] is the number of descriptors contained in the ith cluster.
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" style="width:60%" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/signature.png" width="50%" />
 
 ## Classification
 
@@ -52,7 +52,7 @@ Our algorithm is implemented through 3 majors classes :
 - __Classifier__ : classify concept by the mean of Artificial Neural Networks
 - __Processing__ : process images and return a set of concept (shape)
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.PNG" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/class_diagram.PNG" width="50%" />
 
 ## Evaluation and testing
 
@@ -66,7 +66,7 @@ In order to evaluate our algorithm, we use Columbia Object Image Library (COIL) 
 - Accuracy :99%
 - F-mesure : 65%
 
-<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/coil_100.png" />
+<img src="https://github.com/ndongmo/Automatic-concept-recognition-in-images/blob/master/images/coil_100.png" width="50%" />
 
 ## Testing
 Our software present 3 different menus :
