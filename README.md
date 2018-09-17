@@ -2,10 +2,10 @@
 
 This project aims to implement a strong C++ algorithm for concept recognition in images based on Neural Networks. Moreover, it implements a friendly user interface for evaluation and testing using Qt library. We also use the well-known OpenCv library for images processing and classification. Our method is a two phases approach. First, we detect and localize a concept (shape) in an image. Then, we recognize and classify the concept with our Neral Networks. However, before starting detection and classification, we need to do some work :
 
-- create a bac of visual words and extract image signatures from the training dataset of images
+- create a bag of visual words and extract image signatures from the training dataset of images
 - train the Neural Networks with the training dataset
 
-## Building of the bac of visual words and image signatures extraction
+## Building of the bag of visual words and image signatures extraction
 
 ### Image dataset and features extraction
 
@@ -31,7 +31,7 @@ Once the training dataset has been selected, we can start features extraction. A
   </tr>
 </table>
 
-### Bac of visual words
+### Bag of visual words
 This is done by clustering the extracted features with __kMeans algorithm__ provided by OpenCv.
 
 ### Image signatures
